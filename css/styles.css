@@ -30,7 +30,10 @@
 
 body {
     font-family: 'Roboto';
-    color: #212121;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
 }
 
 .logo-web {
@@ -38,7 +41,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-    color: #2196F3;
+    color: var(--hero-button-hover);
 }
 
 .logo-studio {
@@ -47,7 +50,7 @@ body {
 
 .header-link {
     font-weight: 500;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #212121;
 }
@@ -61,7 +64,7 @@ body {
 
 .contacts-link {
     font-weight: 500;
-    line-height: 1, 14;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: #757575;
 }
@@ -78,12 +81,11 @@ body {
 .hero-title {
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.50;
+    line-height: 1.36;
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background: #2F303A;
 }
 
 .hero-btn {
@@ -91,7 +93,7 @@ body {
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
-        line-height: 30px;
+        line-height: 1.88;
         display: flex;
         align-items: center;
         text-align: center;
@@ -99,6 +101,7 @@ body {
         color: #FFFFFF;
         background: #2196F3;
         border: none;
+        cursor: pointer;
 }
 
 .hero-item {
@@ -111,10 +114,8 @@ body {
 }
 
 .hero-page {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    letter-spacing: 0.03em;
     color: #757575;
 }
 /*----------project-------  */
@@ -179,7 +180,7 @@ body {
     
 .footer-link {
      font-weight: 400;
-     line-height: 171%;
+     line-height: 1.71;
      color: rgba(255, 255, 255, 0.6);
      font-style: normal;
  }
@@ -200,9 +201,11 @@ body {
 
 
 .catalog-list-btn{
+    font-family:inherit;
     font-weight: 500;
     font-size: 16px;
-    line-height: 162%;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
     text-align: center;
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -210,14 +213,14 @@ body {
 }
 
 
-.catalog-list-btn:hover{
-    cursor: pointer;
+.catalog-list-btn:hover,
+.catalog-list-btn:focus{
     color: #FFFFFF;
     background: #2196F3;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
-    border-radius: 4px;}
+    }
 
     .project-title{
         font-weight: 700;
@@ -227,7 +230,6 @@ body {
             color: #212121;
     }
     .project-after{
-        font-weight: 400;
             font-size: 16px;
             line-height: 1.88;
             letter-spacing: 0.03em;
